@@ -1,0 +1,15 @@
+{
+  "short_name": "Navas Landscaping",
+  "name": "Navas Landscaping — Client Demo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2e7d32",
+  "icons": [
+    {
+      "src": "assets/img/favicon-32.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    }
+  ]
+}
