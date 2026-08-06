@@ -878,3 +878,9 @@ a:hover { color: var(--terra-600); }
   .hero-stats { gap: 1.25rem; }
   .hero-stats strong { font-size: 1.6rem; }
 }
+
+/* Keep hero trust line clear of the corner license stamp */
+.hero-card .hero-trust { padding-right: 6.5rem; }
+@media (max-width: 64rem) {
+  .hero-card .hero-trust { padding-right: 5.5rem; }
+}
