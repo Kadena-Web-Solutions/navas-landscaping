@@ -1,10 +1,11 @@
 #!/bin/sh
 # Cloudflare Pages build: generate assets/img/*.img.svg wrappers from the
 # original JPEGs (GitHub API pushes cannot carry binaries, and wrappers embed
-# the JPEG as base64 inside an SVG <image> element).
+# the JPEG as base64 inside an SVG <image> element). Also fetches the hero
+# video, which cannot be pushed through the GitHub API either.
 set -eu
 
-mkdir -p assets/img
+mkdir -p assets/img assets/video
 
 gen() {
   name="$1"; url="$2"; w="$3"; h="$4"
@@ -36,4 +37,8 @@ gen patio-pavers   https://litter.catbox.moe/vjhmih.jpg 1536 962
 gen retaining-wall https://litter.catbox.moe/gjcug6.jpg 1536 962
 gen sprinklers     https://litter.catbox.moe/kc2wnr.jpg 1536 962
 
-echo "All image wrappers generated."
+echo "Fetching hero-loop.mp4"
+curl -fsSL --retry 3 --retry-delay 2 https://litter.catbox.moe/oc50fr.mp4 -o assets/video/hero-loop.mp4
+echo "Wrote assets/video/hero-loop.mp4 ($(wc -c < assets/video/hero-loop.mp4) bytes)"
+
+echo "All assets generated."
