@@ -25,15 +25,15 @@ gen() {
   echo "Wrote assets/img/$name.img.svg ($(wc -c < "assets/img/$name.img.svg") bytes)"
 }
 
-gen hero           https://litter.catbox.moe/ovwzwa.jpg 2048 1082
-gen hero-aerial    https://litter.catbox.moe/tzoinx.jpg 2048 1082
-gen pest-control   https://litter.catbox.moe/au6ssh.jpg 1536 962
-gen cleanup        https://litter.catbox.moe/yh956k.jpg 1536 962
-gen fencing        https://litter.catbox.moe/r9wj3f.jpg 1536 962
-gen gallery-sod    https://litter.catbox.moe/u8npvq.jpg 1536 962
-gen lawn-care      https://litter.catbox.moe/t9zfvl.jpg 1536 962
-gen patio-pavers   https://litter.catbox.moe/nqcbwl.jpg 1536 962
-gen retaining-wall https://litter.catbox.moe/pnqqc9.jpg 1536 962
-gen sprinklers     https://litter.catbox.moe/rhz97s.jpg 1536 962
+gen hero           https://litter.catbox.moe/wd6xmg.jpg 2048 1082
+gen hero-aerial    https://litter.catbox.moe/5fhpg9.jpg 2048 1082
+gen pest-control   https://litter.catbox.moe/wqixwx.jpg 1536 962
+gen cleanup        https://litter.catbox.moe/p8hqdk.jpg 1536 962
+gen fencing        https://litter.catbox.moe/xgrhf9.jpg 1536 962
+gen gallery-sod    https://litter.catbox.moe/cyhjrr.jpg 1536 962
+gen lawn-care      https://litter.catbox.moe/qlxalf.jpg 1536 962
+gen patio-pavers   https://litter.catbox.moe/vjhmih.jpg 1536 962
+gen retaining-wall https://litter.catbox.moe/gjcug6.jpg 1536 962
+gen sprinklers     https://litter.catbox.moe/kc2wnr.jpg 1536 962
 
 echo "All image wrappers generated."
