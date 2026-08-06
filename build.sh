@@ -26,6 +26,8 @@ gen() {
 }
 
 gen hero           https://litter.catbox.moe/ovwzwa.jpg 2048 1082
+gen hero-aerial    https://litter.catbox.moe/tzoinx.jpg 2048 1082
+gen pest-control   https://litter.catbox.moe/au6ssh.jpg 1536 962
 gen cleanup        https://litter.catbox.moe/yh956k.jpg 1536 962
 gen fencing        https://litter.catbox.moe/r9wj3f.jpg 1536 962
 gen gallery-sod    https://litter.catbox.moe/u8npvq.jpg 1536 962
