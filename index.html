@@ -158,16 +158,18 @@
     <!-- ============ 2. HERO ============ -->
     <section class="hero" id="top">
       <div class="hero-bg" aria-hidden="true">
-        <img src="assets/img/hero-aerial.img.svg" alt="" fetchpriority="high">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-aerial.img.svg">
+          <source src="assets/video/hero-loop.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="wrap">
-        <div class="hero-card">
+        <div class="hero-panel">
           <span class="hero-eyebrow">Tri-Cities' Full-Service Grounds Contractor</span>
           <h1>Big-Property Grounds, <em>Handled.</em></h1>
           <p class="hero-sub">Nava's Landscaping LLC runs residential, commercial, and pest control divisions across the Tri-Cities — HOAs, apartment complexes, office buildings, and homes. One contractor. One call. Done on schedule, since 2011.</p>
           <div class="hero-ctas">
             <a class="btn btn-primary" href="#contact">Get My Free Estimate</a>
-            <a class="btn btn-outline" href="tel:+15094406306">Call 509-440-6306</a>
+            <a class="btn btn-outline-light" href="tel:+15094406306">Call 509-440-6306</a>
           </div>
           <ul class="hero-stats" aria-label="Company at a glance">
             <li><strong>15+</strong><span>Years in Business</span></li>
@@ -176,7 +178,7 @@
           </ul>
           <p class="hero-trust">Licensed &amp; Bonded · Residential · Commercial · Pest Control · Se habla español</p>
 
-          <!-- License stamp: lives INSIDE .hero-card; never hide, never anchor to hero -->
+          <!-- License stamp: lives INSIDE .hero-panel; never hide, never anchor to hero -->
           <svg class="license-stamp" viewBox="0 0 160 160" role="img" aria-label="Licensed and bonded — WA contractor license NAVASLL832DA">
             <defs>
               <path id="stamp-top" d="M 80,80 m -62,0 a 62,62 0 1,1 124,0"/>
@@ -600,5 +602,5 @@
     })();
   </script>
 </body>
-<!-- deploy-check: v3 enterprise repositioning — divisions, aerial hero, stats -->
+<!-- deploy-check: v4 full-bleed video hero -->
 </html>
